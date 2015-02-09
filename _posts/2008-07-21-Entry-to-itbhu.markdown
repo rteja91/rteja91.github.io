@@ -2,13 +2,12 @@
 layout: post
 title:  "Entry to IT-BHU(Currently IIT(BHU) Varanasi)"
 date:   2008-07-21 12:21:29
-categories: Engineering Life entry
+categories: Engineering Life 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+21st July 2008 My entry to IT-BHU to study Integrated Dual Degree in Pharmaceutics. First time i was out of my state and landed into a feeling of complex new environment. Even though i was able to understand hindi  
 
-Jekyll also offers powerful support for code snippets:
+
 
 {% highlight ruby %}
 def print_hi(name)
