@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-02-02 12:21:29
-categories: jekyll update
+title:  "Entry to IT-BHU(Currently IIT(BHU) Varanasi)"
+date:   2008-07-21 12:21:29
+categories: Engineering Life entry
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
