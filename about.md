@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About 
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My Name is Ravi Teja Gangineni. I love to develop Beautiful UI interfaces and RESTful Services which can be scalable. I am graduate of IIT(BHU), Varanasi.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+you can reach me on my email rteja7228@gmail.com
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+ 
