@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ravi Teja Gangineni</title>
+    <description>I am a Web Developer and linux Systems Administrator. Around 3 years of Experience in web development and Linux Systems.  
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>2015-09-22 10:15:55 +0530</pubDate>
+    <lastBuildDate>2015-09-22 10:15:55 +0530</lastBuildDate>
+    <generator>Jekyll v</generator>
+    
+      <item>
+        <title>Entry to IT-BHU(Currently IIT(BHU) Varanasi)</title>
+        <description>&lt;p&gt;21st July 2008 My entry to IT-BHU to study Integrated Dual Degree in Pharmaceutics. First time i was out of my state and 
+landed into a feeling of complex new environment. Even though i was able to understand hindi, but when i spoke hindi with obvious mistakes environment sometimes filled with humour or anger in the opposite person.
+Coming to english Speaking… I was good in english but not fluent enough and it was unavoidable thing that i can’t speak english with gatekeepers and autorickshaw pullers. &lt;/p&gt;
+
+</description>
+        <pubDate>2008-07-21 17:51:29 +0530</pubDate>
+        <link>http://yourdomain.com/Engineering/Life/2008/07/21/Entry-to-itbhu.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Engineering/Life/2008/07/21/Entry-to-itbhu.html</guid>
+        
+        
+        <category>Engineering</category>
+        
+        <category>Life</category>
+        
+      </item>
+    
+  </channel>
+</rss>
