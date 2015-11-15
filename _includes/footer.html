@@ -53,12 +53,26 @@
   </div>
 
 </footer>
-<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.nicescroll.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.nicescroll.plus.js"></script>
-    <script src="{{ site.baseurl }}/js/velocity.min.js"></script>
-    <script src="{{ site.baseurl }}/js/skrollr.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery.scrolline.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/modernizr.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/materialize.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+ <script src="{{ "/js/angular.min.js" | prepend: site.url }}"></script>
+ <script src="{{ "/js/angular-animate.min.js" | prepend: site.url }}"></script>
+ <script src="{{ "/js/angular-aria.min.js" | prepend: site.url }}"></script>
+ <script src="{{ "/js/angular-material.min.js" | prepend: site.url }}"></script>
+ <script src="{{ "/js/main.js" | prepend: site.url }}"></script>
+ <script type="text/javascript" src="{{"/js/paper-full.min.js" | prepend:site.url }}"></script>
+ <script type="text/paperscript" src="{{"/js/script.js" | prepend:site.url}}" canvas="MyAwesomeCanvas"></script>
+ <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.corpulse.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.corpulse.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+ 

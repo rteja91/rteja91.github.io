@@ -1,23 +1,44 @@
-<header class="site-header">
-    <nav>
-      <div class="nav-wrapper">
-      	
-        <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.title }}</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-       {% for page in site.pages %}
-          {% if page.title %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+<md-toolbar class="header">
+
+      <div class="md-toolbar-tools docs-toolbar-tools" ng-click="openMenu()" tabindex="-1" role="button">
+        <button class="md-icon-button md-button md-ink-ripple hide-gt-sm" ng-transclude="" aria-label="Toggle Menu">
+          <md-icon md-svg-src="img/icons/ic_menu_24px.svg" class="ng-scope ng-isolate-scope" aria-hidden="true"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;">
+<g id="Header">
+    <g>
+        <rect x="-618" y="-2232" fill="none" width="1400" height="3600"></rect>
+    </g>
+</g>
+<g id="Label">
+</g>
+<g id="Icon">
+    <g>
+        <rect fill="none" width="24" height="24"></rect>
+        <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"></path>
+    </g>
+</g>
+<g id="Grid" display="none">
+    <g display="inline">
+    </g>
+</g>
+</svg></md-icon>
+        </button>
+        <div class="fill-height layout-row flex">
+          <h2 class="md-toolbar-item md-breadcrumb md-headline">
+            <!-- ngIf: menu.currentPage.name !== menu.currentSection.name -->
+            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+          </h2>
+
+          <span class="flex"> </span> <!-- use up the empty space -->
+
+          <div class="md-toolbar-item docs-tools layout-row">
+			{% for page in site.pages %}
+			{% if page.title %}
+			<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+			{% endif %}
+			{% endfor %}
+         
+          </div>
+        </div>
       </div>
-    </nav>
-</header>
+
+    </md-toolbar>
