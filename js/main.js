@@ -1,6 +1,6 @@
 /**
  * Main File to start with modules
  */
-angular.module('myAwesomeStuff', ['ngMaterial']).run(function($log){
+angular.module('myAwesomeStuff', []).run(function($log){
     
 });
