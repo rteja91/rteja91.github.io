@@ -7,28 +7,32 @@ permalink: /blog/
             <!-- Blog -->
             <section id="section7">
                 <div class="container">
-                    <h2>Blog Post</h2>
+                    <h2>Blog </h2>
                     <div class="blog-posts masonry" id="blog-masonry">
                         <div class="blog-grid-sizer"></div>
-                        <div class="blog-post image-left">
+                         {% for post in site.categories['blog'] %}
+                        <div class="blog-post {%if post.imagepos %} {{post.imagepos}} {%endif%}">
                             <div class="inner">
-                                <a href="single-blog-post.html">
-                                    <div class="image" style="background-image: url('images/blog-post-image01.jpg');"></div>
+                            	{%if post.blogimage %}
+                                <a href="{{ post.url | prepend: site.url }}">
+                                    <div class="image" style="background-image: url('{{ site.url }}{{post.blogimage}}');"></div>
                                 </a>
+                                {%endif%}
                                 <div class="content">
-                                    <span class="date">March 14, 2015</span>
-                                    <h4><a href="single-blog-post.html">We Support Any Type Of Design</a></h4>
+                                    <span class="date">{{post.date | date: "%b %-d, %Y" }}</span>
+                                    <h4><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h4>
                                     <footer>
-                                        <span class="comments-link"><a href="single-blog-post.html">3 Comments</a></span>
-                                        <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
+                                        <span class="comments-link"><a href="{{ post.url | prepend: site.url }}">3 Comments</a></span>
+                                        <span class="share-link"><a href="{{ post.url | prepend: site.url }}"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
                                 <!-- end .content -->
                             </div>
                             <!-- end .inner -->
                         </div>
+                        {%endfor%}
                         <!-- end .blog-post -->
-                        <div class="blog-post">
+                       <!--  <div class="blog-post">
                             <div class="inner">
                                 <div class="content">
                                     <span class="date">March 15, 2015</span>
@@ -38,15 +42,15 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
+                        end .blog-post
                         <div class="blog-post image-top">
                             <div class="inner">
                                 <a href="single-blog-post.html">
-                                    <div class="image" style="background-image: url('images/blog-post-image02.jpg');"></div>
+                                    <div class="image" style="background-image: url('/images/blog-post-image02.jpg');"></div>
                                 </a>
                                 <div class="content">
                                     <span class="date">March 13, 2015</span>
@@ -56,15 +60,15 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
+                        end .blog-post
                         <div class="blog-post image-top">
                             <div class="inner">
                                 <a href="single-blog-post.html">
-                                    <div class="image" style="background-image: url('images/blog-post-image03.jpg');"></div>
+                                    <div class="image" style="background-image: url('/images/blog-post-image03.jpg');"></div>
                                 </a>
                                 <div class="content">
                                     <span class="date">March 12, 2015</span>
@@ -74,15 +78,15 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
+                        end .blog-post
                         <div class="blog-post image-right">
                             <div class="inner">
                                 <a href="single-blog-post.html">
-                                    <div class="image" style="background-image: url('images/blog-post-image04.jpg');"></div>
+                                    <div class="image" style="background-image: url('/images/blog-post-image04.jpg');"></div>
                                 </a>
                                 <div class="content">
                                     <span class="date">March 11, 2015</span>
@@ -92,11 +96,11 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
+                        end .blog-post
                         <div class="blog-post">
                             <div class="inner">
                                 <div class="content">
@@ -107,15 +111,15 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
+                        end .blog-post
                         <div class="blog-post image-left">
                             <div class="inner">
                                 <a href="single-blog-post.html">
-                                    <div class="image" style="background-image: url('images/blog-post-image05.jpg');"></div>
+                                    <div class="image" style="background-image: url('/images/blog-post-image05.jpg');"></div>
                                 </a>
                                 <div class="content">
                                     <span class="date">March 9, 2015</span>
@@ -125,40 +129,19 @@ permalink: /blog/
                                         <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                                     </footer>
                                 </div>
-                                <!-- end .content -->
+                                end .content
                             </div>
-                            <!-- end .inner -->
+                            end .inner
                         </div>
-                        <!-- end .blog-post -->
-                    </div>
-                    <!-- end .blog-posts -->
-                    <div class="blog-load-more">
+                        end .blog-post
+                                            </div>
+                                            end .blog-posts
+                                            <div class="blog-load-more">
                         <a href="single-blog-post.html" class="button solid-button white icon-right">Load More Posts<i class="md-refresh"></i></a>
-                    </div>
+                                            </div> -->
                     <!-- end .blog-load-more -->
                 </div>
                 <!-- end .container -->
             </section>
             <!-- end #section1 -->
 
-
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>

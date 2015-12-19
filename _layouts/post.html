@@ -1,15 +1,107 @@
 ---
 layout: default
 ---
-<div class="post">
+				{% if page.type == "post"%}
+				<!--Single Blog Post -->
+				<section>
+					<div class="container">
+						<div class="single-blog-post">
+							<header class="blog-header clearfix">
+								<div class="content">
+									<span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+									<h4>{{ page.title }}</h4>
+									<span class="meta"><!-- <a href="#">7 Comments</a> |  --><a href="#">By {% if page.author %} {{ page.author }}{% endif %}</a></span>
+									<div class="footer">
+										<p class="button-row blog-button-row"><a href="#" class="button solid-button dark">Prev</a><a href="#" class="button solid-button purple">Next</a></p>
+									</div>
+								</div> <!-- end .content -->
+								<div class="image" style="background-image: url('{{ site.url }}{% if page.blogimage %}{{page.blogimage}}{%endif%}');"></div>
+							</header> <!-- end .blog-header -->
+							<div class="blog-post">
+								<div class="blog-post-content">
+										{{content}}
+										</div> 				</div> <!-- end .blog-post -->
+							<div class="blog-details">
+								<div class="section">
+									<h5>Author Details</h5>
+									<div class="author">
+										<div class="image"><img src="{%if page.authorimage %}{{page.authorimage}}{%endif%}" alt="alt text" class="img-responsive"></div>
+										<span class="title">{%if page.author %}{{page.author}}{%endif%}</span>
+										<p>{%if page.authorinfo %}{{page.authorinfo}}{%endif%}</p>
+									</div>
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Share Post</h5>
+									<div class="social-icons">
+										<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+										<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+										<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
+										<a href="#" class="social-icon"><i class="fa fa-behance"></i></a>
+										<a href="#" class="social-icon"><i class="fa fa-dribbble"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Tags</h5>
+									<div class="tags"><a href="#">Music</a><span>|</span><a href="#">Mobile</a><span>|</span><a href="#">Tablet</a><span>|</span><a href="#">Live</a></div>
+								</div> <!-- end .section -->
+							</div> <!-- end .blog-details -->
+						</div> <!-- end .single-blog-post -->
+					</div> <!-- end .container -->
+				</section>
+				{%endif%}
+				{%if page.type == "work" %}
+				<!-- Single Portfolio -->
+				<section class="active">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="portfolio-slider owl-carousel">
+									{% for img in page.sliderimages %}
+									<div><img src="{{site.url}}{{img}}" alt="alt text" class="img-responsive"></div>
+									{%endfor%}
+									
+								</div> <!-- end .portfolio-slider -->
+								<div class="row related-images">
+									{%for relimg in page.relimages %}
+									<div class="col-sm-6"><a href="#"><img src="{{site.url}}{{relimg}}" alt="alt text" class="img-responsive"></a></div>
+									{%endfor%}
+								</div> <!-- end .row -->
+							</div> <!-- end .col-sm-8 -->
+							<div class="col-sm-4">
+								<p class="button-row portfolio-button-row">
+									 {% if paginator.previous_page %}
+									<a href="{{ paginator.previous_page_path }}" class="button solid-button white">Prev Project</a>
+									{%endif%}
+									{% if paginator.next_page %}
+									<a href="#" class="button solid-button purple">Next Project</a>
+									{%endif%}
+								</p>
+								<div class="portfolio-details">
+									<h4>{{page.projecttitle}}</h4>
+									<p>{{page.projectdesc}}</p>
+									<div class="portfolio-meta">
+										<span>Date:</span>
+										{{page.projectdate}}
+									</div> <!-- end .portfolio-meta -->
+									<div class="portfolio-meta">
+										<span>Client:</span>
+										{{page.projectclient}}
+									</div> <!-- end .portfolio-meta -->
+									<div class="portfolio-meta">
+										<span>Agency:</span>
+										{{page.projectagency}}
+									</div> <!-- end .portfolio-meta -->
+									<div class="portfolio-meta">
+										<span>Type:</span>
+										{{page.projecttype}}
+									</div> <!-- end .portfolio-meta -->
+									<p><a href="{{site.url}}{{page.projectlink}}" class="button solid-button purple">Visit Website</a></p>
+								</div> <!-- end .portfolio-details -->
+							</div> <!-- end .col-sm-4 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .container -->
+				</section> <!-- end #section1 -->
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+				
+				
+				{%endif%}
