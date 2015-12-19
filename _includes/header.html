@@ -11,17 +11,17 @@
             <!-- Popup -->
             <div class="popup">
                 <nav class="social-nav">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Facebook</a>
+                    <ul class="list-unstyled" style="margin-left: 0px;">
+                        <li><a href="https://www.facebook.com/rteja91" target="_blank">Facebook</a>
                         </li>
-                        <li><a href="#">Twitter</a>
+                        <li><a href="https://twitter.com/rteja91">Twitter</a>
                         </li>
-                        <li><a href="#">Linkedin</a>
+                        <li><a href="https://in.linkedin.com/in/gangineniraviteja">Linkedin</a>
                         </li>
-                        <li><a href="#">Google+</a>
+                        <li><a href="https://plus.google.com/u/0/+RaviTejaGangineni">Google+</a>
                         </li>
-                        <li><a href="#">Behance</a>
-                        </li>
+                        <!-- <li><a href="#">Behance</a>
+                        </li> -->
                     </ul>
                     <!-- end .list-unstyled -->
                 </nav>
@@ -40,22 +40,6 @@
             <a href="#" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
             <nav class="main-nav">
                 <ul class="list-unstyled">
-                    <!-- <li class="active"><a href="#section1">Home</a>
-                    </li>
-                    <li><a href="#section2">About</a>
-                    </li>
-                    <li><a href="#section3">Skill</a>
-                    </li>
-                    <li><a href="#section4">Experience</a>
-                    </li>
-                    <li><a href="#section5">Education</a>
-                    </li>
-                    <li><a href="#section6">Work</a>
-                    </li>
-                    <li><a href="#section7">Blog</a>
-                    </li>
-                    <li><a href="#section8">Contact</a>
-                    </li> -->
                 {% for page in site.pages %}
 				{% if page.title %}
 				<li><a  href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></li>
@@ -75,13 +59,6 @@
     </div>
     <!-- end .responsive-menu -->
 
-    <!-- Section Navigation -->
-    <!-- <div class="section-nav">
-        <nav class="section1">
-            <a href="#section2" class="forward"><i class="md md-chevron-right"></i></a>
-            <a href="#section1" class="backward"><i class="md md-chevron-left"></i></a>
-        </nav>
-    </div> -->
-    <!-- end .section-nav -->
+
     <div class="sections">
         <div class="sections-wrapper clearfix">
