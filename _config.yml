@@ -2,8 +2,8 @@
 title: Ravi Teja Gangineni
 email: rteja7228@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I am a Web Developer and linux Systems Administrator. Around 3 years of Experience in
-  web development and Linux Systems.  
+  Ravi Teja Gangineni is a full stack developer having experience on Frontend Development with Javascript, Jquery, Angular Js. 
+  Backend Development with PHP Frameworks like Slim (REST Micro Framework), Laravel, Magento, Wordpress.  
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://raviteja.gangineni.com" # the base hostname & protocol for your site
 twitter_username: rteja91
@@ -11,5 +11,8 @@ github_username:  rteja91
 
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
 sass:
     sass_dir: _sass
