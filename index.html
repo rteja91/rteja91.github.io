@@ -1,23 +1,60 @@
 ---
-layout: default
+layout: home
 ---
+<div class="cd-section" id="features">
 
-<div class="home">
+  <div class="container">
+    <!--     *********     FEATURES 2      *********      -->
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="features-2">
+      <div class="container">
+        <div class="row">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="col-md-4 ">
+              <div class="col-sm-6 col-sm-offset-1">
+                <img src="/assets/img/teja.png" alt="Geek Image" class="img-circle img-responsive img-raised">
+              </div>
+              <div class="col-sm-12">
+                <div class="name">
+                  <h3 class="title">Ravi Teja Gangineni</h3>
+                  <h6>Full stack Developer</h6>
+                  <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
+                  <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#pablo" class="btn btn-just-icon btn-simple btn-pinterest"><i class="fa fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <div class="description text-center">
+                <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+              </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        </div>
+        </div>
+      </div>
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!--     *********    END FEATURES 2      *********      -->
+
+  </div>
 
 </div>
+<!--<div class="home">-->
+
+  <!--<h1 class="page-heading">Posts</h1>-->
+
+  <!--<ul class="post-list">-->
+    <!--{% for post in site.posts %}-->
+      <!--<li>-->
+        <!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+
+        <!--<h2>-->
+          <!--<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
+        <!--</h2>-->
+      <!--</li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
+<!--</div>-->

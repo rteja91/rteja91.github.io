@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="profile-page">
+{% include header.html %}
+<div class="page-header header-filter" data-parallax="active" style="background-image: url({{'/assets/img/city.jpg' | prepend: site.baseurl }});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 class="title">Welcome to my web arena</h3>
+                <h1 class="title" ><span id="welcomeText"></span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert alert-info">
+    <div class="container">
+        <div class="alert-icon">
+            <i class="material-icons">info_outline</i>
+        </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+        </button>
+
+        <b>Site under Development:</b> Send me your ideas to rteja7228@gmail.com if you have any.
+    </div>
+</div>
+        {{ content }}
+
+{% include footer.html %}
+{% include scripts.html %}
+<script>
+    $(function(){
+        $("#welcomeText").typed({
+            strings: ["Try knowing about me.", "Explore freebies.","Find my discoveries.","Checkout my projects.","and THANKS for visiting me."],
+            typeSpeed: 30,
+            callback: function () {
+                lift();
+            }
+        });
+    });
+    function lift(){
+
+    }
+</script>
+</body>
+</html>
