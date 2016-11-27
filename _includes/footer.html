@@ -1,92 +1,38 @@
-	</div>
-        <!-- end .sections-wrapper -->
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
     </div>
-    <!-- end .sections -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>About</h4>
-                        <p style="text-align: justify">{{ site.description }}</p>
-                    </div>
-                    <!-- end .col-sm-4 -->
-                    <div class="col-sm-4">
-                        <h4>Connect</h4>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/rteja91" class="social-icon"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/rteja91" class="social-icon"><i class="fa fa-twitter"></i></a>
-                            <a href="https://in.linkedin.com/in/gangineniraviteja" class="social-icon"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://plus.google.com/u/0/+RaviTejaGangineni" class="social-icon"><i class="fa fa-google-plus"></i></a>
-<!--                             <a href="#" class="social-icon"><i class="fa fa-behance"></i></a>
-                            <a href="#" class="social-icon"><i class="fa fa-dribbble"></i></a> -->
-                        </div>
-                        <!-- end .social-icons -->
-                    </div>
-                    <!-- end .col-sm-4 -->
-                    <div class="col-sm-4">
-                        <h4>Contact</h4>
-                        <p><br/>
-                       	Email: <a href="mailto:{{ site.email }}" style="color: #fff">{{ site.email }}</a></p>
-                    </div>
-                    <!-- end .col-sm-4 -->
-                </div>
-                <!-- end .row -->
-            </div>
-            <!-- end .container -->
-        </div>
-        <!-- end .footer -->
-        <div class="bottom">Copyright &copy; Ravi Teja Gangineni All Rights Reserved.</div>
-        <div class="bottom">Powered by Jekyll, Github, Sility Design </div>
-        <!-- end .bottom -->
-    </footer>
-    <!-- end .footer -->
+  </div>
 
-  <!-- jQuery -->
-    <script src="{{ "/js/jquery-1.11.2.min.js" | prepend: site.url }}"></script>
-    <!-- Bootstrap -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.url }}"></script>
-    <!-- Inview -->
-    <script src="{{ "/js/jquery.inview.min.js" | prepend: site.url }}"></script>
-    <!-- SmoothScroll -->
-    <script src="{{ "/js/smoothscroll.js" | prepend: site.url }}"></script>
-    <!-- jQuery Knob -->
-    <script src="{{ "/js/jquery.knob.min.js" | prepend: site.url }}"></script>
-    <!-- Owl Carousel -->
-    <script src="{{ "/js/owl.carousel.min.js" | prepend: site.url }}"></script>
-    <!-- Isotope -->
-    <script src="{{ "/js/isotope.pkgd.min.js" | prepend: site.url }}"></script>
-    <!-- Images Loaded -->
-    <script src="{{ "/js/imagesloaded.pkgd.min.js" | prepend: site.url }}"></script>
-    <!-- google maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <!-- Scripts.js -->
-    <script src="{{ "/js/scripts.js" | prepend: site.url }}"></script>
- <!-- Piwik -->
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-47898487-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//piwik.corpulse.com/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 1]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//piwik.corpulse.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
- 
+</footer>

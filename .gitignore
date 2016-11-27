@@ -1,3 +1,5 @@
+.idea/*
+.sass-cache/*
 _site
 .sass-cache
 #*
@@ -42,4 +44,3 @@ svn-commit*.tmp
 serve
 .git/*
 .project
-

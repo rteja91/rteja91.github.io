@@ -1,64 +1,27 @@
-    <!-- Header -->
-    <header class="header">
-        <div class="top clearfix">
-            <a href="{{ site.url }}/contact/" class="available"><i class="ion-ios-email-outline"></i><span>Contact for Tech Consultation</span></a>
-            <div class="right-icons">
-                <a href="#" class="open-search header-open-search"><i class="md md-search"></i></a>
-                <a href="#" class="download"><i class="md md-file-download"></i></a>
-                <a href="#" class="share"><i class="md md-more-vert"></i></a>
-            </div>
-            <!-- end .right-icons -->
-            <!-- Popup -->
-            <div class="popup">
-                <nav class="social-nav">
-                    <ul class="list-unstyled" style="margin-left: 0px;">
-                        <li><a href="https://www.facebook.com/rteja91" target="_blank">Facebook</a>
-                        </li>
-                        <li><a href="https://twitter.com/rteja91">Twitter</a>
-                        </li>
-                        <li><a href="https://in.linkedin.com/in/gangineniraviteja">Linkedin</a>
-                        </li>
-                        <li><a href="https://plus.google.com/u/0/+RaviTejaGangineni">Google+</a>
-                        </li>
-                        <!-- <li><a href="#">Behance</a>
-                        </li> -->
-                    </ul>
-                    <!-- end .list-unstyled -->
-                </nav>
-                <!-- end .social-nav -->
-            </div>
-            <!-- end .popup -->
-        </div>
-        <!-- end .top -->
-        <div class="bottom clearfix">
-            <div class="title"><a class="site-title" href="{{ site.url }}/">{{ site.title }}</a>
-            </div>
-            <div class="header-action-button-wrapper">
-                <a href="#" class="header-action-button action-button"><i class="md md-add"></i></a>
-            </div>
-            <!-- end .header-action-button-wrapper -->
-            <a href="#" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
-            <nav class="main-nav">
-                <ul class="list-unstyled">
-                {% for page in site.pages %}
-				{% if page.title %}
-				<li><a  href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></li>
-				{% endif %}
-				{% endfor %}
-                </ul>
-            </nav>
-            <!-- end .main-nav -->
-        </div>
-        <!-- end .bottom -->
-    </header>
-    <!-- end .header -->
-    <div class="responsive-menu">
-        <a href="#" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
-        <nav class="responsive-nav"></nav>
-        <!-- end .responsive-nav -->
-    </div>
-    <!-- end .responsive-menu -->
+<header class="site-header">
 
+  <div class="wrapper">
 
-    <div class="sections">
-        <div class="sections-wrapper clearfix">
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>
