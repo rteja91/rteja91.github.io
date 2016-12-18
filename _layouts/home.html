@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="profile-page">
+<body class="section-white">
 {% include header.html %}
-<div class="page-header header-filter" data-parallax="active" style="background-image: url({{'/assets/img/city.jpg' | prepend: site.baseurl }});">
+<div class="page-header header-filter" style="background-image: url('assets/img/office.jpg');">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-7  text-center">
+                <h3 class="title">Olaa...!!!</h3>
                 <h3 class="title">Welcome to my web arena</h3>
-                <h1 class="title" ><span id="welcomeText"></span></h1>
+                <h2 class="title"><span id="welcomeText"></span></h2>
+            </div>
+            <div class="col-md-5 text-center">
+                <h3 class="title">My Recent Work</h3>
+                <h5>For now this Web Profile is my recent work. It is built on Jekyll, Material Kit and hosted on Github.</h5>
+                <a href="https://github.com/rteja91/rteja91.github.io/" class="btn btn-rose btn-lg">Let me take a look
+                    <div class="ripple-container"></div>
+                </a>
             </div>
         </div>
-    </div>
-</div>
-<div class="alert alert-info">
-    <div class="container">
-        <div class="alert-icon">
-            <i class="material-icons">info_outline</i>
-        </div>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><i class="material-icons">clear</i></span>
-        </button>
 
-        <b>Site under Development:</b> Send me your ideas to rteja7228@gmail.com if you have any.
+        <div class="row">
+            <div class="col-md-12 text-center" style="padding-top: 10%;">
+                <!--<h4>Scroll to know more about me</h4>-->
+                <a href="#KnowAboutme" class="btn btn-info btn-fab btn-fab-large btn-round">
+                    <i class="material-icons" style="top: 55%;left: 29%;font-size: 48px;">keyboard_arrow_down</i>
+                    <div class="ripple-container"></div>
+                </a>
+            </div>
+
+        </div>
     </div>
 </div>
-        {{ content }}
+{{ content }}
 
 {% include footer.html %}
 {% include scripts.html %}
 <script>
-    $(function(){
+    $(function () {
         $("#welcomeText").typed({
-            strings: ["Try knowing about me.", "Explore freebies.","Find my discoveries.","Checkout my projects.","and THANKS for visiting me."],
+            strings: ["Try knowing about me.", "Explore freebies.", "Find my discoveries.", "Checkout my projects.", "and THANKS for visiting me."],
             typeSpeed: 30,
             callback: function () {
                 lift();
             }
         });
     });
-    function lift(){
+    function lift() {
 
     }
 </script>

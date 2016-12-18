@@ -1,4 +1,5 @@
-<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+<div class="header-2">
+<nav class="navbar navbar-default navbar-transparent navbar-default navbar-fixed-top navbar-color-on-scroll">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,29 +9,35 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ site.baseurl }}/" style="font-size: 24px;"><strong>{{ site.title }}</strong></a>
     </div>
 
     <div class="collapse navbar-collapse" id="navigation-example">
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="../portfolio">
-            <i class="material-icons">apps</i> Portfolio
-          </a>
-        </li>
-        <li>
-          <a href="/blog">
-              <i class="material-icons">view_quilt</i> Blog
-          </a>
-        </li>
-        <li>
-          <a href="/about">
-              <i class="material-icons">account_circle</i> About me
-          </a>
-        </li>
+          <li>
+              <a href="{{ site.baseurl }}/#KnowAboutme">
+                  <i class="material-icons">account_circle</i> About me
+              </a>
+          </li>
+          <li>
+              <a href="{{ site.baseurl }}/#projects">
+                  <i class="material-icons">apps</i> Portfolio
+              </a>
+          </li>
+          <li>
+              <a href="{{ site.baseurl }}/#BlogPosts">
+                  <i class="material-icons">view_quilt</i> Journey
+              </a>
+          </li>
+          <li>
+              <a href="{{ site.baseurl }}/#ContactMyBot">
+                  <i class="material-icons">chat_bubble</i> Contact Me
+              </a>
+          </li>
       </ul>
     </div>
   </div>
 </nav>
+</div>
 
 

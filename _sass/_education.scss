@@ -1,0 +1,218 @@
+.education {
+  padding: 132px 0;
+  margin: 72px 0;
+}
+
+.education .line {
+  border-bottom: 1px dashed #232323;
+  position: relative;
+  margin: 0 18px;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  top: -1px;
+}
+
+.education .line:before {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 4px solid #7c4dff;
+  border-radius: 100%;
+  position: absolute;
+  left: -18px;
+  bottom: -7px;
+}
+
+.education .line:after {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 4px solid #7c4dff;
+  border-radius: 100%;
+  position: absolute;
+  right: -18px;
+  bottom: -7px;
+}
+
+.education .item {
+  width: 33%;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: #232323;
+}
+
+.education .item .marker {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 6px solid #7c4dff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -11px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+  z-index: 2;
+}
+
+.education .item .content {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  padding: 24px;
+  position: absolute;
+  top: -180px;
+  left: 0;
+  right: 0;
+  margin: 0 12px;
+}
+
+.education .item:nth-child(even) .content {
+  top: auto;
+  bottom: -180px;
+}
+
+.education .item .content:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 0 0 18px;
+  border-color: transparent transparent transparent #fff;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, .15);
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.education .item:nth-child(even) .content:after {
+  border-width: 0 18px 18px 0;
+  border-color: transparent #fff transparent transparent;
+  //box-shadow: none;
+  position: absolute;
+  top: -9px;
+  bottom: auto;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+}
+
+.education .item .content span {
+  font-size: 13px;
+  line-height: 26px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.education .item .content h4 {
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.education .item .year {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  position: relative;
+  bottom: -44px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.education .item:nth-child(even) .year {
+  top: -44px;
+  bottom: auto;
+}
+
+@media all and (max-width: 768px) {
+  .education {
+    position: relative;
+    padding: 0;
+    margin: 18px 0;
+    margin-bottom: 42px;
+  }
+  .education .item {
+    width: 100%;
+    float: none;
+    margin-bottom: 24px;
+  }
+  .education .item:last-of-type {
+    margin-bottom: 0;
+  }
+  .education .item .content {
+    position: static;
+  }
+  .education .line {
+    border-bottom: none;
+    border-left: 1px dashed #232323;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  .education .line:before {
+    top: -18px;
+    bottom: -7px;
+    left: -7px;
+  }
+  .education .line:after {
+    right: auto;
+    bottom: -18px;
+    left: -7px;
+  }
+  .education .item .content {
+    padding: 24px;
+    position: static;
+    margin: 0;
+    margin-left: 36px;
+  }
+  .education .item .marker {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: -11px;
+    margin-top: -27px;
+  }
+  .education .item .content:after {
+    border-width: 18px 0 0 18px;
+    border-color: transparent transparent transparent #fff;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .15);
+    bottom: auto;
+    left: 36px;
+    top: 50%;
+    margin-top: -25px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .education .item:nth-child(even) .content:after {
+    border-width: 18px 0 0 18px;
+    border-color: transparent transparent transparent #fff;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .15);
+    bottom: auto;
+    left: 36px;
+    top: 50%;
+    margin-top: -25px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .education .item .year {
+    position: static;
+    margin: 0 auto;
+    padding-left: 36px;
+    margin-top: 6px;
+  }
+}
